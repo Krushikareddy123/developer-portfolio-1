@@ -1,0 +1,21 @@
+.hover-link {
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hover-in {
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.hover-link:hover .hover-in {
+    transform: translateY(-100%);
+}
+
+.hover-in div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
